@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/homeRootLayout">
+
+    <ImageView
+        android:id="@+id/bgShadow"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/screen_shadow"/>
+
+    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+        android:id="@+id/main_layoutHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:background="@color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+
+    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+    <!--        Side Bar/ Left panel-->
+    <RelativeLayout
+            android:layout_alignParentStart="true"
+            android:id="@+id/menuBarPanel"
+            android:visibility="gone"
+            android:layout_toStartOf="@+id/main_layoutHolder"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/menu_bar_gradient_left_right"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true">
+
+                <!--            App Logo-->
+                <ImageView
+                    android:id="@+id/appLogo"
+                    android:adjustViewBounds="true"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"/>
+
+                <!--                Menu Container-->
+                <LinearLayout
+                    android:id="@+id/menuHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="1dp">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lowerMenuLayout"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:focusable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/exitApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:maxLines="5"
+                        android:paddingStart="5dp"
+                        style="?rowHeaderStyle"
+                        android:paddingEnd="0dp"
+                        android:ellipsize="end"
+                        android:focusableInTouchMode="true"
+                        android:background="@android:color/transparent"
+                        android:textColor="#A9A9A9"
+                        android:textAlignment="center"/>
+
+                    <ImageView
+                        android:id="@+id/menuWaterMark"
+                        android:layout_marginStart="15dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:visibility="invisible"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/lineGradient"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true">
+            </View>
+        </RelativeLayout>
+
+</RelativeLayout>

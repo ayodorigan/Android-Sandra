@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="0dp"
+    android:paddingEnd="0dp">
+
+
+        <androidx.leanback.widget.RowHeaderView
+            android:id="@+id/row_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?rowHeaderStyle"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingEnd="50dp"-->
+<!--            android:paddingStart="0dp"-->
+<!--            android:id="@+id/count"-->
+<!--            style="?rowHeaderStyle"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_alignParentEnd="true"/>-->
+
+</RelativeLayout>

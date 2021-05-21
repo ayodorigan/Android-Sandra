@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="lb_browse_headers_transition_delay">0</integer>
+    <integer name="lb_browse_headers_transition_duration">0</integer>
+    <integer name="lb_browse_rows_anim_duration">0</integer>
+    <integer name="lb_card_activated_animation_duration">0</integer>
+    <integer name="lb_card_selected_animation_delay">0</integer>
+    <integer name="lb_card_selected_animation_duration">0</integer>
+
+<!--    <integer name="lb_browse_headers_transition_delay">150</integer>-->
+<!--    <integer name="lb_browse_headers_transition_duration">250</integer>-->
+<!--    <integer name="lb_browse_rows_anim_duration">250</integer>-->
+
+<!--    -->
+<!--    <integer name="slideEdgeStart">1</integer>-->
+
+</resources>

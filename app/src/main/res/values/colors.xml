@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+
+    <color name="default_background">#0096a6</color>
+    <color name="icon_background">#4A4F51</color>
+    <color name="icon_alt_background">#2A2F51</color>
+
+
+
+    <!-- -->
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="text_color">#FFFFFF</color>
+
+    <color name="selected_color">#e56900</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_opacity_fifty">#80ffffff</color>
+    <color name="white_opacity_seventy">#b3ffffff</color>
+    <color name="white_opacity_thirty">#4dffffff</color>
+    <color name="white_opacity_twenty">#33ffffff</color>
+
+    <color name="blue">#0000FF</color>
+    <color name="blue_opacity_fifty">#800000FF</color>
+    <color name="blue_opacity_seventy">#b30000FF</color>
+    <color name="blue_opacity_thirty">#4d0000FF</color>
+    <color name="blue_opacity_twenty">#330000FF</color>
+
+    <color name="black">#000000</color>
+    <color name="black_opacity_ninety">#E6000000</color>
+    <color name="black_opacity_fifty">#80000000</color>
+    <color name="black_opacity_seventy">#b2000000</color>
+    <color name="black_opacity_sixty">#99000000</color>
+    <color name="black_opacity_thirty">#4d000000</color>
+    <color name="black_opacity_twenty">#33000000</color>
+    <color name="black_opacity_zero">#00000000</color>
+    <color name="category_selected_color">#318CC9</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradient_start">#00000000</color>
+    <color name="gradient_end">#AA000000</color>
+
+    <color name="lb_browse_header_color">#FFFFFF</color>
+
+</resources>

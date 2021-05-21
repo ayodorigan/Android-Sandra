@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name"><![CDATA[APPLICATION_NAME]]></string>
+
+
+    <!-- Error messages -->
+    <string name="no_internet">No internet Connection</string>
+    <string name="videos_loading_error">Can\'t load this Video</string>
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="no_splash_screen">No Splash Screen</string>
+    <string name="no_content">No Content</string>
+    <string name="corrupt_json">Invalid Channel URL</string>
+    <string name="video_stream_error">Video can\'t be played</string>
+
+    <string name="track_selection_title">Select tracks</string>
+    <string name="play_next">PLAY NEXT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="dialog_no">No</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="livestram">There is no live streaming at the moment.\nPlease try again later</string>
+    <string name="QuitOK">Exit</string>
+    <string name="QuitNo">Cancel</string>
+
+    <string name="exitMsg"> Are you sure you want to exit?</string>
+    <string name="quit">Quit</string>
+    <string name="ok">OK</string>
+    <string name="searchHint">Search...</string>
+    <string name="slash">/</string>
+    <string name="or_scan_qr">Or Scan QR</string>
+    <string name="sale">SALE</string>
+    <string name="quick_shop_link">Quick Shop Link</string>
+    <string name="live">Live</string>
+
+
+    <string name="this_is_am_app_logo">This is am app Logo</string>
+    <string name="storyimage">storyImage</string>
+
+</resources>

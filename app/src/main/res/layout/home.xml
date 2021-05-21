@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp"
+        android:layout_marginStart="@dimen/pages_padding_start">
+        <!--            App Logo-->
+        <ImageView
+            android:paddingTop="10dp"
+            android:id="@+id/appLogoV4"
+            android:adjustViewBounds="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitStart"
+            android:visibility="gone"
+            android:contentDescription="@string/this_is_am_app_logo"/>
+        <LinearLayout
+            android:id="@+id/detailedDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+
+            <LinearLayout
+                android:layout_weight=".3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/moredetailstext">
+
+
+
+                <!--                Title-->
+                <TextView
+                    android:id="@+id/video_title"
+                    style="?rowHeaderStyle"
+                    android:textSize="@dimen/title_font"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="5dp"
+                    />
+
+<!--                Video Statics-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/titleViews">
+
+                </LinearLayout>
+
+                <!--                Description-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/video_description"
+                    android:gravity="start"
+                    style="?rowHeaderStyle"
+                    android:textSize="15sp"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="gravity"
+                    android:lineSpacingExtra="2pt"
+                    android:maxLines="4"
+                    android:maxLength="200"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/detailedBackgroundHolder"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/pages_padding_start"
+                android:paddingEnd="0dp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <!--            Selected Video Thumbnail top right-->
+                    <LinearLayout
+                        android:layout_width="550dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/selectedThumb"
+                        android:layout_alignParentEnd="true">
+
+                        <com.bosphere.fadingedgelayout.FadingEdgeLayout
+                            android:id="@+id/fading_edge_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/detailedBackground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY" />
+
+                        </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/homeVideosHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp"
+                android:paddingBottom="0dp"
+                android:layout_weight="1">
+                <FrameLayout
+                    android:id="@+id/homeVideos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

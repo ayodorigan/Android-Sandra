@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+    <Button
+        android:id="@+id/searchKey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:textAllCaps="false"
+        android:focusable="true"
+        android:background="@drawable/searchkey"
+        android:textColor="@color/white"
+        android:minHeight="50dp">
+
+    </Button>
+</LinearLayout>

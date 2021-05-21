@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp">
+        <include
+            android:id="@+id/title"
+            layout="@layout/menu_page_title"/>
+    </LinearLayout>
+
+    <!--            SearchPage input field-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="-10dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:hint="@string/searchHint"
+            android:textColorHint="@color/black"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="120dp"
+            android:background="@drawable/rounded_edittext"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            android:enabled="false"
+            />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:id="@+id/alphabetsKeys0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/alphabetsKeys1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/numericKeys"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/searchResultCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/searchArea"
+            android:nextFocusUp="@id/numericKeys"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="0dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
